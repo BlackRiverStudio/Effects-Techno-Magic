@@ -21,7 +21,8 @@ public class Activate : MonoBehaviour
     }
     private void OnGUI()
     {
-        if (GUI.Button(new Rect(50, 50, button.x, button.y), "Disolve"))
+        if (GUI.Button(new Rect(50, 50, 50, 50), "X")) Application.Quit();
+        if (GUI.Button(new Rect(50, 125, button.x, button.y), "Disolve"))
         {
             disolve.SetActive(true);
             hologram.SetActive(false);
@@ -33,7 +34,7 @@ public class Activate : MonoBehaviour
             portal.SetActive(false);
             sword.SetActive(false);
         }
-        if (GUI.Button(new Rect(50, 125, button.x, button.y), "Hologram"))
+        if (GUI.Button(new Rect(50, 200, button.x, button.y), "Hologram"))
         {
             disolve.SetActive(false);
             hologram.SetActive(true);
@@ -45,7 +46,7 @@ public class Activate : MonoBehaviour
             portal.SetActive(false);
             sword.SetActive(false);
         }
-        if (GUI.Button(new Rect(50, 200, button.x, button.y), "Force Field"))
+        if (GUI.Button(new Rect(50, 275, button.x, button.y), "Force Field"))
         {
             disolve.SetActive(false);
             hologram.SetActive(false);
@@ -57,7 +58,7 @@ public class Activate : MonoBehaviour
             portal.SetActive(false);
             sword.SetActive(false);
         }
-        if (GUI.Button(new Rect(50, 275, button.x, button.y), "Orb"))
+        if (GUI.Button(new Rect(50, 350, button.x, button.y), "Orb"))
         {
             disolve.SetActive(false);
             hologram.SetActive(false);
@@ -69,7 +70,7 @@ public class Activate : MonoBehaviour
             portal.SetActive(false);
             sword.SetActive(false);
         }
-        if (GUI.Button(new Rect(50, 350, button.x, button.y), "Rainbow"))
+        if (GUI.Button(new Rect(50, 425, button.x, button.y), "Rainbow"))
         {
             disolve.SetActive(false);
             hologram.SetActive(false);
@@ -81,7 +82,7 @@ public class Activate : MonoBehaviour
             portal.SetActive(false);
             sword.SetActive(false);
         }
-        if (GUI.Button(new Rect(50, 425, button.x, button.y), "Portal"))
+        if (GUI.Button(new Rect(50, 500, button.x, button.y), "Portal"))
         {
             disolve.SetActive(false);
             hologram.SetActive(false);
@@ -93,7 +94,7 @@ public class Activate : MonoBehaviour
             portal.SetActive(true);
             sword.SetActive(false);
         }
-        if (GUI.Button(new Rect(50, 500, button.x, button.y), "Sword"))
+        if (GUI.Button(new Rect(50, 575, button.x, button.y), "Sword"))
         {
             disolve.SetActive(false);
             hologram.SetActive(false);
